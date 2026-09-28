@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ferzan Hekimoğlu | Oyuncu</title>
+<meta name="description" content="Ferzan Hekimoğlu resmi web sitesi — filmografi, kariyer ve iletişim.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='4' fill='%23111'/><text x='12' y='16' font-size='11' fill='white' text-anchor='middle' font-family='sans-serif'>FH</text></svg>">
+</head>
+<body>
+
+<header class="header" id="top">
+  <nav class="nav container">
+    <a class="brand" href="#top">Ferzan Hekimoğlu</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hakkinda">Hakkında</a></li>
+      <li><a href="#filmografi">Filmografi</a></li>
+      <li><a href="#kariyer">Kariyer</a></li>
+      <li><a href="#iletisim">İletişim</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero container" id="hakkinda">
+    <div class="hero-text reveal">
+      <p class="eyebrow">Oyuncu · İstanbul</p>
+      <h1>Ferzan Hekimoğlu</h1>
+      <p class="lead">Müjdat Gezen Sanat Merkezi mezunu, sinema ve dizi oyuncusu. Tiyatrodan ekrana uzanan bir kariyer; <em>Her Şey Yolunda Merkez</em>'den <em>Hercai</em>'ye on yılı aşkın süredir izleyiciyle buluşuyor.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="#filmografi">Filmografiyi keşfet</a>
+        <a class="btn btn-outline" href="#iletisim">İletişim</a>
+      </div>
+      <ul class="hero-meta">
+        <li><strong>Doğum</strong> 1991, İstanbul</li>
+        <li><strong>Eğitim</strong> Müjdat Gezen Sanat Merkezi</li>
+        <li><strong>Alan</strong> Dizi · Sinema · Tiyatro</li>
+      </ul>
+    </div>
+    <div class="hero-visual reveal" aria-hidden="true">
+      <div class="monogram">
+        <span>FH</span>
+      </div>
+      <div class="frame"></div>
+    </div>
+  </section>
+
+  <!-- İSTATİSTİKLER -->
+  <section class="stats container reveal">
+    <div class="stat"><span class="stat-num" data-count="11">0</span><span class="stat-label">Yıllık kariyer</span></div>
+    <div class="stat"><span class="stat-num" data-count="11">0</span><span class="stat-label">Film ve dizi projesi</span></div>
+    <div class="stat"><span class="stat-num" data-count="2013" data-plain="1">0</span><span class="stat-label">İlk ekran rolü</span></div>
+    <div class="stat"><span class="stat-num" data-count="2025" data-plain="1">0</span><span class="stat-label">Son proje yılı</span></div>
+  </section>
+
+  <!-- FİLMOGRAFİ -->
+  <section class="section container" id="filmografi">
+    <h2 class="section-title">Filmografi</h2>
+    <p class="section-sub">Dizi ve sinema projelerine göz atın; bir yapıma tıklayarak ayrıntıları görün.</p>
+
+    <div class="filters" role="tablist" aria-label="Filmografi filtreleri">
+      <button class="filter-btn active" data-filter="all">Tümü</button>
+      <button class="filter-btn" data-filter="dizi">Dizi</button>
+      <button class="filter-btn" data-filter="sinema">Sinema</button>
+    </div>
+
+    <div class="works" id="works"></div>
+  </section>
+
+  <!-- PROJE DETAY MODALI -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <article class="modal-card">
+      <button class="modal-close" data-close aria-label="Kapat">&times;</button>
+      <span class="tag" id="modalTag"></span>
+      <h3 id="modalTitle"></h3>
+      <p class="modal-meta" id="modalMeta"></p>
+      <p id="modalDesc"></p>
+    </article>
+  </div>
+
+  <!-- KARİYER -->
+  <section class="section container" id="kariyer">
+    <h2 class="section-title">Kariyer yolculuğu</h2>
+    <ol class="timeline">
+      <li class="reveal"><span class="tl-year">Eğitim</span><h3>Müjdat Gezen Sanat Merkezi</h3><p>Oyunculuk eğitimini İstanbul'da Müjdat Gezen Sanat Merkezi'nde tamamladı; küçük yaşlardan itibaren tiyatro oyunlarında sahne aldı.</p></li>
+      <li class="reveal"><span class="tl-year">2013</span><h3>Ekran başlangıcı</h3><p><em>Galip Derviş</em> ve <em>Her Şey Yolunda Merkez</em> dizileriyle tanınırlık kazandı.</p></li>
+      <li class="reveal"><span class="tl-year">2014</span><h3>Sinemaya geçiş</h3><p>Komedi filmi <em>Delisin! Delisin!</em> ile beyaz perdede yer aldı.</p></li>
+      <li class="reveal"><span class="tl-year">2015–2017</span><h3>Ard arda projeler</h3><p><em>Kalbim Ege'de Kaldı</em>, <em>En Güzeli</em>, <em>Bir Şey Değilim</em> ve <em>Seven Ne Yapmaz</em> gibi farklı türlerde yapımlarda rol aldı.</p></li>
+      <li class="reveal"><span class="tl-year">2019</span><h3>Hercai</h3><p>ATV'nin sevilen dram dizisinin kadrosuna katılarak geniş kitlelere ulaştı.</p></li>
+      <li class="reveal"><span class="tl-year">2021–2023</span><h3>Tür çeşitliliği</h3><p>Fantastik film <em>Avcı: İlk Kehanet</em> ve çocuk dizisi <em>Kod Adı Kırlangıç</em> ile farklı kitlelere hitap etti.</p></li>
+      <li class="reveal"><span class="tl-year">2025</span><h3>Rüya Gibi</h3><p>Televizyon dizisiyle kariyerine devam ediyor.</p></li>
+    </ol>
+  </section>
+
+  <!-- İLETİŞİM -->
+  <section class="section container" id="iletisim">
+    <h2 class="section-title">İletişim</h2>
+    <p class="section-sub">Proje teklifleri ve iş birlikleri için aşağıdaki kanallardan ulaşabilirsiniz.</p>
+    <div class="contact-grid">
+      <a class="contact-card reveal" href="mailto:menajerlik@ferzanhekimoglu.com">
+        <h3>Menajerlik</h3>
+        <p>menajerlik@ferzanhekimoglu.com</p>
+      </a>
+      <a class="contact-card reveal" href="#" rel="noopener">
+        <h3>Sosyal medya</h3>
+        <p>@ferzanhekimoglu</p>
+      </a>
+      <a class="contact-card reveal" href="https://www.sinematurk.com/kisi/157647-ferzan-hekimoglu" target="_blank" rel="noopener">
+        <h3>Profiller</h3>
+        <p>SinemaTürk · IMDb</p>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© 2026 Ferzan Hekimoğlu · Tüm hakları saklıdır</p>
+    <a href="#top" class="to-top">Yukarı çık ↑</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
